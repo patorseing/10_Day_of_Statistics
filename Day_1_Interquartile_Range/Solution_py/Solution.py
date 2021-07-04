@@ -40,8 +40,7 @@ def Quartile(arr, n):
     if n % 2 == 0:
         return median(arr)
     startpos = 0
-    stoppos = len(arr)/2
-    stoppos = math.floor(stoppos)
+    stoppos = math.floor(len(arr)/2)
     if n == 3:
         startpos = stoppos
         if len(arr) % 2 == 1:
