@@ -19,10 +19,6 @@ def weightedMean(X, W):
     # Write your code here
     return round(sum(list(map(lambda x, w: x*w, X, W))) / sum(W), 1)
 
-def convertInt(x):
-    x = x.split()
-    return list(map(int, x))
-
 
 if __name__ == '__main__':
     n = int(input().strip())
