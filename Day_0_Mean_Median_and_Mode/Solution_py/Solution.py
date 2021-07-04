@@ -5,7 +5,7 @@ import statistics
 
 def convertInt(x):
     x = x.split()
-    return list(map((lambda i: int(i)), x))
+    return list(map(int, x))
 
 
 def mean(N, x):

@@ -1,0 +1,34 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+#
+# Complete the 'weightedMean' function below.
+#
+# The function accepts following parameters:
+#  1. INTEGER_ARRAY X
+#  2. INTEGER_ARRAY W
+#
+
+
+def weightedMean(X, W):
+    # Write your code here
+    return round(sum(list(map(lambda x, w: x*w, X, W))) / sum(W), 1)
+
+def convertInt(x):
+    x = x.split()
+    return list(map(int, x))
+
+
+if __name__ == '__main__':
+    n = int(input().strip())
+
+    vals = list(map(int, input().rstrip().split()))
+
+    weights = list(map(int, input().rstrip().split()))
+
+    print(weightedMean(vals, weights))
